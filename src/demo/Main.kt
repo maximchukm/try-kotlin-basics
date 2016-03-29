@@ -5,9 +5,18 @@ package demo
  *    date 29.03.2016.
  */
 fun main(args: Array<String>) {
-    reverseString()
     capitalize()
+    reverseString()
     reverseList()
+}
+
+fun capitalize() {
+    println("\nCAPITALIZE EACH WORD IN SEQUENCE")
+    val seq = "foo bar baz"
+    println(seq)
+
+    val res = seq.split(" ").map { w -> w.capitalize() }.joinToString(" ")
+    println(res)
 }
 
 fun reverseString() {
@@ -24,15 +33,6 @@ fun reverseString() {
         chArr[length - i - 1] = buf
     }
     println(String(chArr))
-}
-
-fun capitalize() {
-    println("\nCAPITALIZE EACH WORK IN SEQUENCE")
-    val seq = "foo bar baz"
-    println(seq)
-
-    val res = seq.split(" ").map { w -> w.capitalize() }.joinToString(" ")
-    println(res)
 }
 
 fun reverseList() {
