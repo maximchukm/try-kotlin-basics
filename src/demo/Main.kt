@@ -8,6 +8,8 @@ fun main(args: Array<String>) {
     capitalize()
     reverseString()
     reverseList()
+    println(Fibonachi.iteration(7))
+    println(Fibonachi.recursion(7))
 }
 
 fun capitalize() {
