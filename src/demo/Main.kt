@@ -10,6 +10,7 @@ fun main(args: Array<String>) {
     reverseList()
     println(Fibonachi.iteration(7))
     println(Fibonachi.recursion(7))
+    println(FizzBuzz.run(100))
 }
 
 fun capitalize() {
